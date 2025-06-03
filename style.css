@@ -1,0 +1,129 @@
+/* Obecný styl pro bloky/karty */
+.block {
+    border-radius: 5px;
+    background-color: lightgray; /* Ostatní bloky jsou světle šedé */
+}
+
+/* Styl pro blok upozornění */
+.block.alert {
+    background-color: yellow;
+}
+
+/* Styl pro blok Nejprodávanější produkty */
+.block.best-sellers {
+    background-color: lightblue; /* Světle modrý */
+    padding: 10px;
+}
+
+/* Styl pro karty v bloku Nejprodávanější produkty */
+.block.best-sellers .product-card {
+    background-color: lightpink; /* Světle růžové */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styl pro nadpisy */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(100, 200, 1);
+}
+
+/* Styl pro tlačítko Detail */
+a.detail-button {
+    display: inline-block;
+    color: blue;
+    opacity: 0.5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Styl pro recenze */
+.review {
+    border: 1px dashed black; /* Čárkovaný rámeček */
+    padding: 10px;
+    margin-bottom: 10px;
+}.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}/* Blok Nejprodávanější produkty */
+div.cards {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Karty s produkty */
+div.card {
+    background-color: lightpink;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Ostatní bloky */
+div {
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Recenze s čárkovaným rámečkem */
+.review {
+    border: 2px dashed #000;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}/* Obrázky v kartách */
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px; /* Volitelné: zaoblení rohů obrázků */
+}
